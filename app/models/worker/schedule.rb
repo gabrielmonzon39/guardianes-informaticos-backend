@@ -4,7 +4,7 @@ class Worker::Schedule < ApplicationRecord
   validate :valid_time?
 
   def day_of_week
-    time.strftime('%A').downcase.to_sym
+    time.strftime('%A').downcase
   end
 
   def hour

@@ -16,14 +16,17 @@ services:
   postgres_test:
     container_name: postgres_recorrido_test
     image: postgres:13
+    expose:
+      - "5433"
     ports:
-      - "5433:5432"
+      - "5433:5433"
     environment:
       POSTGRES_USER: "admin"
       POSTGRES_PASSWORD: "qUhJtiDAEz"
       POSTGRES_DB: "recorrido_db_test"
+    command: -p 5433
     networks:
-      - recorrido_network_test
+      - recorrido_network
   web:
     container_name: rails_recorrido
     build: .

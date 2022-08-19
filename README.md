@@ -12,7 +12,7 @@ Because this application was developed using docker, all configurations come rea
 ```bash
 docker-compose build
 ```
-It may take some time to build the application. Once it is done you can access the API at the following url: http://localhost:3000
+It may take some time to build the application. 
 
 ## Running the application
 To run the application you need to run the following command:
@@ -25,6 +25,8 @@ Or you can run the following command to run the application in the background:
 ```bash
 docker-compose up -d
 ```
+
+Once it is done you can access the API at the following url: http://localhost:3000
 
 ## Database creation and initialization
 Please make sure that the application is running before creating the database.

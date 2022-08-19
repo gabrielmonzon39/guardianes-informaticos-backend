@@ -1,6 +1,6 @@
 # Full Stack Developer Test
 
-This is the backend part of the test. 
+This is the backend part of the test. This was built using Ruby on Rails 7, PostgreSQL, and Docker.
 
 ## System dependencies
 To get this application up and running you need to have docker installed.

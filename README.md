@@ -1,24 +1,50 @@
-# README
+# Full Stack Developer Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend part of the test. 
 
-Things you may want to cover:
+## System dependencies
+---
+To get this application up and running you need to have docker installed.
+For more information on docker please visit [https://www.docs.docker.com/](https://www.docs.docker.com/)
 
-* Ruby version
+## Set up
+---
+Because this application was developed using docker, all configurations come ready to use. All you need to do is run the following command:
 
-* System dependencies
+```bash
+docker-compose build
+```
+It may take some time to build the application. Once it is done you can access the API at the following url: http://localhost:3000
 
-* Configuration
+## Running the application
+---
+To run the application you need to run the following command:
 
-* Database creation
+```bash
+docker-compose up
+```
+Or you can run the following command to run the application in the background:
 
-* Database initialization
+```bash
+docker-compose up -d
+```
 
-* How to run the test suite
+## Database creation and initialization
+---
+Please make sure that the application is running before creating the database.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+Run the following commands to create and initialize the database:
 
-* ...
+```bash
+docker exec -it rails_recorrido rails db:setup
+```
+
+
+## How to run the test suite
+---
+To run the test suite you need to run the following command:
+
+```bash
+docker exec -it rails_recorrido rspec
+```

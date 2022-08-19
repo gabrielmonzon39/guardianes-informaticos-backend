@@ -43,3 +43,9 @@ To run the test suite you need to run the following command:
 ```bash
 docker exec -it rails_recorrido rspec
 ```
+
+## Next steps
+Now you can go and check the frontend part of the application in [this repository](https://github.com/gabrielmonzon39/guardianes-informaticos-frontend)
+
+## Demo
+For a quick demo of the application you can check the [following video](https://drive.google.com/file/d/18Rj_sbIpGPikFD1TGCa2V19Wq_hjDJHH/view?usp=sharing)
